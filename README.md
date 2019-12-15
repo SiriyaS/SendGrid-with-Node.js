@@ -8,18 +8,15 @@
 ##### หลังจากนั้นจะมี API Key ขึ้นมา ให้เราก็อป key นั้นไว้ !!อย่าลืมก็อป key ไว้!!
 ### Create Folder 
 ##### open terminal >  
-## 
 ```
   mkdir FolderName  
   cd FolderName 
 ```
   ### Install npm 
-  ## 
 ```
  npm init --yes 
 ```
  ### Install library
- ##
  ```
   npm install @sendgrid/mail
  ```
@@ -30,7 +27,6 @@
  source ./sendgrid.env
 ```
  ##### สร้างไฟล์ในโฟลเดอร์ที่เราเพิ่งสร้างขึ้น ในที่นี้เราจะให้ไฟล์ชื่อว่า sendGrid.js
- ##
  ```
  const Mail = require("@sendgrid/mail");
  Mail.setApiKey(process.env.SENDGRID_API_KEY);
@@ -44,14 +40,12 @@
  Mail.send(message);
  ```
  ##### ซึ่งเราสามารถใส่ style หรือ แก้ไขเนื้อหาภายใน mail โดยใช้ HTML tag 
-#
+ 
  ##### เมื่อเสร็จแล้วก็ save file และกลับไปที่ terminal เพื่อ run โปรแกรม
- ##
  ```
  node sendGrid.js
  ```
  ##### ตอนนี้เมลจะถูกส่งไปแล้วให้เราลองไปเช็คใน inbox ของผู้รับ หรือไปเช็คใน account ของเราที่ app.sendgrid.com ตรง Activity 
- #
  
  >ศึกษาเพิ่มเติมได้ในวิดีโอนี้ https://www.youtube.com/watch?v=s2bzUzHeSVw
  >หรือใน Setup Guide > Integrate using our Web API or SMTP relay > Web API > Node.js
