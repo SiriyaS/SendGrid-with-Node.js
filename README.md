@@ -9,7 +9,7 @@
 #####
 ※ Go to **Settings > API Keys > Create API Key** and create a new `API Key` and don't forget to copy it
 
-## Implimentation
+## Implementation
 ※ Open your project directory
 #### Create an environment variable
 ※ Because `API KEY` is confidential so we need to create `API_KEY` as an environment variable, run the following in your terminal
