@@ -2,12 +2,14 @@
 
 **Sending email via Twilio SendGrid with Go**
 
-### SendGrid
+## SendGrid
 ※ Go to app.sendgrid.com
+#####
 ※ Create an account and sign in to your account (You may need to **Create a sender identity** please do so)
+#####
 ※ Go to **Settings > API Keys > Create API Key** and create a new `API Key` and don't forget to copy it
 
-### Implimentation
+## Implimentation
 ※ Open your project directory
 #### Create an environment variable
 ※ Because `API KEY` is confidential so we need to create `API_KEY` as an environment variable, run the following in your terminal
@@ -23,7 +25,8 @@ go get github.com/sendgrid/sendgrid-go
 ```
 #### Time to send your mail
 ※ Create a file and define detail about your mail
-**sender's name, sender's mail, receiver's name receiver's mail, mail's subject, and mail's content**
+#####
+**sender's name, sender's mail, receiver's name receiver's mail, mail's subject, and mail's content(plainText and html)**
 ```sh
 import (
 	"fmt"
